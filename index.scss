@@ -304,18 +304,27 @@ html {
 .contact{
     padding-block: 300px;
     &__title{
-        color: #FFFF00;
+        color: white;
         font-size: 200px;
         font-family: $title-font;
         text-align: center;
     }
     &__item-1{
-        font-size: 40px;
+        font-size: 50px;
     }
     &__container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         text-align: center;
+        color: white;
+        
+    }
+    &__email{
+        text-align: center;
+        padding: 40px;
+        font-size: 30px;
+        font-family: $title-font;
+        color: white;
     }
 }
 @media only screen and (max-width:900px){
