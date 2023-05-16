@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: #6f00ff;
+  background: linear-gradient(-45deg, #000000, #a6ff00, #6f00ff, #6f00ff);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  height: auto;
+  background-color: #6f00ff;
+  min-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  color: white;
+}
+.hero h1 {
+  font-family: "acorn";
+  color: #FFFF00;
+  font-size: 200px;
+  text-align: left;
+  padding-left: 150px;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+.hero h2 {
+  color: #FFFF00;
+  font-size: 100px;
+  letter-spacing: -2px;
+  font-weight: 700;
+  font-family: "acorn";
+}
+.hero h3 {
+  color: #FFFF00;
+  font-family: "acorn";
+  font-size: 200px;
+  text-align: right;
+  letter-spacing: -2px;
+  padding-right: 150px;
+  font-weight: 700;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.header__navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 20px;
+}
+.header__navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+.header__navbar a:hover:before {
+  width: 100%;
+}
+.header__container {
+  background: transparent;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: transparent;
+  border: 3px solid #FFFF00;
+  padding: 15px;
+  border-radius: 35px;
+}
+
+.work {
+  color: white;
+}
+.work__container {
+  display: grid;
+  grid-template-columns: 25, 1fr;
+  width: 100%;
+  margin: 0 auto;
+  grid-row-gap: 65px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.work__title-1 {
+  font-weight: 200;
+  font-size: 130px;
+  padding-left: 25%;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  color: white;
+}
+.work__item-1 {
+  padding: 100px auto;
+  height: 550px;
+  border-radius: 65px;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  border: 3px solid darkcyan;
+}
+.work__item-2 {
+  max-height: 550px;
+  border-radius: 65px;
+  grid-column-start: 11;
+  grid-column-end: 26;
+  border: 3px solid green;
+}
+.work__item-3 {
+  padding: 100px auto;
+  height: 550px;
+  max-height: 550px;
+  border-radius: 65px;
+  grid-column-start: 1;
+  grid-column-end: 16;
+  border: 3px solid red;
+}
+.work__item-4 {
+  max-height: 550px;
+  border-radius: 65px;
+  grid-column-start: 17;
+  grid-column-end: 26;
+  border: 3px solid red;
+}
+
+.aboutme__maintitle {
+  font-weight: 200;
+  font-size: 130px;
+  padding-left: 25%;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  color: white;
+}
+.aboutme__title {
+  font-size: 180px;
+  color: white;
+  text-align: center;
+  z-index: -1;
+  grid-column-start: 12;
+  grid-column-end: 15;
+  writing-mode: vertical-lr;
+  font-weight: 200;
+}
+.aboutme__title-1 {
+  font-size: 160px;
+  color: white;
+  text-align: center;
+  z-index: -1;
+  grid-column-start: 14;
+  grid-column-end: 16;
+  writing-mode: vertical-lr;
+  font-weight: 200;
+}
+.aboutme__container {
+  display: grid;
+  font-size: 100px;
+  justify-content: center;
+  grid-template-columns: repeat(25, 1fr);
+  padding: 100px;
+  grid-row-gap: 50px;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  color: white;
+  font-weight: 200;
+}
+.aboutme__item-1 {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  height: 350px;
+  border-radius: 65px;
+  border: 3px solid white;
+}
+.aboutme__item-2 {
+  grid-column-start: 16;
+  grid-column-end: 26;
+  border-radius: 65px;
+  border: 3px solid black;
+}
+.aboutme__item-3 {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 500px;
+  border-radius: 65px;
+  border: 3px solid aqua;
+}
+.aboutme__item-4 {
+  grid-column-start: 18;
+  grid-column-end: 26;
+  border-radius: 65px;
+  border: 3px solid greenyellow;
+}
+
+.contact {
+  padding-block: 300px;
+}
+.contact__title {
+  color: #FFFF00;
+  font-size: 200px;
+  font-family: "acorn";
+  text-align: center;
+}
+.contact__item-1 {
+  font-size: 40px;
+}
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .hero {
+    padding-block: 200px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    color: white;
+  }
+  .hero h1 {
+    font-size: 100px;
+    text-align: left;
+    padding-left: 50px;
+    font-weight: 100;
+  }
+  .hero h2 {
+    font-size: 50px;
+    font-weight: 100;
+  }
+  .hero h3 {
+    font-size: 100px;
+    text-align: right;
+    padding-right: 50px;
+    font-weight: 100;
+  }
+  .hero p {
+    font-size: 10px;
+  }
+  .work {
+    color: white;
+  }
+  .work__title-1 {
+    font-weight: 100;
+    font-size: 75px;
+    padding-left: 25%;
+    font-family: "Courier New", Courier, monospace;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .work__container {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+  }
+  .work__item-1 {
+    height: 550px;
+  }
+  .work__item-2 {
+    height: 550px;
+  }
+  .work__item-3 {
+    height: 550px;
+  }
+  .work__item-4 {
+    height: 550px;
+  }
+  .aboutme__container {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+  }
+  .aboutme__maintitle {
+    font-size: 75px;
+  }
+  .aboutme__title {
+    font-size: 100px;
+    writing-mode: horizontal-tb;
+  }
+  .aboutme__title-1 {
+    font-size: 100px;
+    writing-mode: horizontal-tb;
+  }
+  .aboutme__item-1 {
+    height: 550px;
+  }
+  .aboutme__item-2 {
+    height: 550px;
+  }
+  .aboutme__item-3 {
+    height: 550px;
+  }
+  .aboutme__item-4 {
+    height: 550px;
+  }
+}/*# sourceMappingURL=index.css.map */
