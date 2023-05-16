@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #6f00ff;
-  background: linear-gradient(-45deg, #000000, #a6ff00, #6f00ff, #6f00ff);
+  background-color: #18A5AC;
+  background: linear-gradient(-45deg, #292E6C, #4664AF, #18A5AC, #18A5AC);
   background-size: 400% 400%;
   animation: gradient 7s ease infinite;
   height: auto;
-  background-color: #6f00ff;
+  background-color: #18A5AC;
   min-height: 100vh;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 .hero h1 {
   font-family: "acorn";
-  color: #FFFF00;
+  color: white;
   font-size: 201px;
   text-align: left;
   padding-left: 150px;
@@ -43,14 +43,14 @@ body {
   font-weight: 700;
 }
 .hero h2 {
-  color: #FFFF00;
+  color: white;
   font-size: 100px;
   letter-spacing: -2px;
   font-weight: 700;
   font-family: "acorn";
 }
 .hero h3 {
-  color: #FFFF00;
+  color: white;
   font-family: "acorn";
   font-size: 200px;
   text-align: right;
@@ -94,7 +94,7 @@ body {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background-color: transparent;
-  border: 3px solid #FFFF00;
+  border: 3px solid white;
   padding: 15px;
   border-radius: 35px;
 }

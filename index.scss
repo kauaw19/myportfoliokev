@@ -1,8 +1,8 @@
-$color-1:#000000;
-$color-2:#a6ff00;   
-$color-3:#6f00ff;
-$color-4:#f6ff00;   
-$title-color:#FFFF00;
+$color-1:#292E6C;
+$color-2:#4664AF;   
+$color-3:#18A5AC;
+$color-4:#5CC09D;   
+$title-color:white;
 $sectitle-color: white ;
 $title-font:"acorn";
 $sectitle-font:'Raleway', sans-serif;
@@ -109,7 +109,7 @@ body {
         background: transparent;
         backdrop-filter: blur(50px);
         background-color: transparent;
-        border: 3px solid #FFFF00;
+        border: 3px solid white;
         padding: 15px;
         border-radius: 35px;
         
